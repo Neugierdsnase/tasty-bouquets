@@ -15,8 +15,13 @@
   },
   "lint-staged": {
     "linters": {
-      "*.js": ["eslint"],
-      "**/*.+(js|jsx|json|css)": ["prettier --write && npm run lint", "git add"]
+      "*.js": [
+        "eslint"
+      ],
+      "**/*.+(js|jsx|json|css)": [
+        "prettier --write && npm run lint",
+        "git add"
+      ]
     }
   },
   "eslintConfig": {
@@ -46,6 +51,7 @@
   },
   "devDependencies": {
     "@types/react": "^17.0.3",
+    "@types/styled-components": "^5.1.9",
     "eslint": "^7.24.0",
     "eslint-plugin-react": "^7.23.2",
     "husky": "^6.0.0",
