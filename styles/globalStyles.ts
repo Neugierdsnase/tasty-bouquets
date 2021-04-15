@@ -1,3 +1,8 @@
 import { createGlobalStyle } from 'styled-components'
+import { theme } from './theme'
 
-export const GlobalStyle = createGlobalStyle``
+export const GlobalStyle = createGlobalStyle`
+  body {
+    background-color: ${theme.colors.darkBg}
+  }
+`
