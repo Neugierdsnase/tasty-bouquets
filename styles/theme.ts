@@ -18,10 +18,16 @@ export const theme = {
     primary: colors["Orchid Pink"],
     textOnLightBg: colors["Space Cadet"],
     darkBg: colors["Space Cadet 2"],
+    darkGreen: colors["Midnight Green Eagle Green"],
   },
   mediaQueries: {
     small: `@media screen and (min-width: ${breakpoints[0]})`,
     medium: `@media screen and (min-width: ${breakpoints[1]})`,
     large: `@media screen and (min-width: ${breakpoints[2]})`,
   },
+  fonts: {
+    headings: "'Pacifico', cursive;",
+    paragraphs: "'Noto Sans', sans-serif;",
+  },
+  space: [2, 4, 8, 18, 36, 72, 144]
 }

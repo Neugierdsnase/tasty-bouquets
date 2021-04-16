@@ -6,7 +6,29 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${theme.colors.darkBg}
   }
 
-  p {
-    font-family: 'Dancing Script'
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Pacifico', cursive;
+  }
+
+  p, span {
+    font-family: 'Noto Sans', sans-serif;
+  }
+
+  @keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+  g#layer1 {
+    transform-origin: center center;
+    color: ${theme.colors.primary};
+    animation: rotation 150s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    max-width: '100%'
   }
 `
