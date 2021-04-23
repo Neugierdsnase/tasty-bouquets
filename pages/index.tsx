@@ -5,6 +5,8 @@ import { Box } from '../components/layout/Box'
 import { Content } from '../components/layout/Content'
 import { Flexbox } from '../components/layout/Flexbox'
 import { Typography } from '../components/typography/Typography'
+import { BouquetInfobox } from '../components/ui-elements/bouquets-infobox/BouquetInfobox'
+import { mockBouquet } from '../temporaryMockData'
 
 const LOGO_SIZE = '400px'
 
@@ -13,12 +15,12 @@ const Home: FunctionComponent = () => (
     <Head>
       <title>Tasty Bouquets</title>
     </Head>
-    <Content leftSide={{Component: Foto, backgroundColor: 'darkGreen'}} rightSide={{Component: LogoWithText, backgroundColor:'darkBg'}} />
+    <Content leftSide={{Component: BouquetBox, backgroundColor: 'darkGreen'}} rightSide={{Component: LogoWithText, backgroundColor:'darkBg'}} />
   </Fragment>
 )
 
-const Foto: FunctionComponent = () => <Box height='100%' width='100%' bg={'darkGreen'}>
-  <Typography>Also something</Typography>
+const BouquetBox: FunctionComponent = () => <Box height='100%' width='100%' bg={'darkGreen'}>
+  <BouquetInfobox bouquet={mockBouquet} />
 </Box> 
 
 const LogoWithText: FunctionComponent = () => (
