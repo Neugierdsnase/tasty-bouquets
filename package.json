@@ -15,11 +15,9 @@
   },
   "lint-staged": {
     "linters": {
-      "*.js": [
-        "eslint"
-      ],
-      "**/*.+(js|jsx|json|css)": [
+      "**/*.+(ts|tsx|js|jsx|json|css)": [
         "prettier --write && npm run lint",
+        "eslint",
         "git add"
       ]
     }

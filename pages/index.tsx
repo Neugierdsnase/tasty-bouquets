@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import React, { Fragment, FunctionComponent } from 'react'
 import { ReactSVG } from 'react-svg'
 import { Box } from '../components/layout/Box'
@@ -20,7 +21,10 @@ const Home: FunctionComponent = () => (
 )
 
 const BouquetBox: FunctionComponent = () => <Box height='100%' width='100%' bg={'darkGreen'}>
-  <BouquetInfobox bouquet={mockBouquet} />
+  <BouquetInfobox bouquet={mockBouquet}>
+    <div />
+    <div />
+  </BouquetInfobox>
 </Box> 
 
 const LogoWithText: FunctionComponent = () => (
@@ -34,6 +38,9 @@ const LogoWithText: FunctionComponent = () => (
           }} />
         </Box>
         <Box width='30vw'>
+          <Link href='/about'>
+            <Typography color='primary'>About</Typography>
+          </Link>
         <Typography m='auto' as='h1' fontFamily='headings'>
           Willkommen
         </Typography>

@@ -2,8 +2,9 @@ import { createGlobalStyle } from 'styled-components'
 import { theme } from './theme'
 
 export const GlobalStyle = createGlobalStyle`
-  body {
+  body, div, section, main {
     background-color: ${theme.colors.darkBg}
+    box-sizing: border-box;
   }
 
   h1, h2, h3, h4, h5, h6 {

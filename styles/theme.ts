@@ -13,6 +13,13 @@ const colors = {
   "Space Cadet 2": "#2d325b"
 }
 
+export const randomColor = () => {
+  const colorKeys = Object.keys(colors)
+  const randomIndex = Math.floor(Math.random() * colorKeys.length)
+
+  return colors[colorKeys[randomIndex]]
+}
+
 export const theme = {
   colors: {
     primary: colors["Orchid Pink"],

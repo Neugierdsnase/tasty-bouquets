@@ -1,11 +1,10 @@
 export type Tag = 'VEGAN' | 'VEGETARIAN' | 'GLUTENFREE' | 'LACTOSEFREE'
 
 export type Bouquet = {
+  [key: string]: string | number | Tag[]
   name: string
-  description: {
-    short: string
-    long: string
-  }
+  descriptionShort: string
+  descriptionLong: string
   price: number
   targetAudience: string
   tags?: Tag[]
