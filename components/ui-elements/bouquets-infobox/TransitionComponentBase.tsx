@@ -21,9 +21,9 @@ export const TransitionComponentBase: FunctionComponent<TransitionComponentBaseP
   return (
     <Container height={height} width={width}>
       {transition((styles, item) => (
-          <animated.div style={{zIndex: item, position: 'absolute', height, backgroundColor: randomColor(), top:0, left: 0, ...styles}} />
+        <animated.div style={{zIndex: item, position: 'absolute', height, backgroundColor: randomColor(), top:0, left: 0, ...styles}} />
       ))}
-        {children}
+      {children}
     </Container>   
   )
 }

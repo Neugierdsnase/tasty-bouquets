@@ -1,6 +1,6 @@
-import { AppProps } from "next/dist/next-server/lib/router/router"
-import Head from "next/head"
-import React, { StrictMode } from "react"
+import { AppProps } from 'next/dist/next-server/lib/router/router'
+import Head from 'next/head'
+import React, { StrictMode } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { GlobalStyle } from '../styles/globalStyles'
 import { NormalizedStyle } from '../styles/normalize'

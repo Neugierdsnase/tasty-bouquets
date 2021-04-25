@@ -1,4 +1,4 @@
-import { Bouquet } from "./types/bouquet";
+import { Bouquet } from './types/bouquet'
 
 export const mockBouquet: Bouquet = {
   name: 'Not a real bouquet',

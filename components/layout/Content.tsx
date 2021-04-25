@@ -13,8 +13,8 @@ const Half: FunctionComponent<Side> = ({Component, backgroundColor}) => (
   <GridItem sm={12} md={6}>
     <Box bg={backgroundColor} p={4} widht={['100vw', '100vw', '50vw']} height='100vh'>
       <Component />
-      </Box>
-    </GridItem>
+    </Box>
+  </GridItem>
 )
 
 export const Content: FunctionComponent<ContentProps> = ({ leftSide, rightSide }) => (

@@ -29,27 +29,27 @@ const BouquetBox: FunctionComponent = () => <Box height='100%' width='100%' bg={
 
 const LogoWithText: FunctionComponent = () => (
   <Box color='primary'>
-      <Flexbox alignItems='center' justifyContent='center' flexDirection='column'>
-        <Box height={LOGO_SIZE} width={LOGO_SIZE}>
+    <Flexbox alignItems='center' justifyContent='center' flexDirection='column'>
+      <Box height={LOGO_SIZE} width={LOGO_SIZE}>
         <ReactSVG 
           src='logo.svg'
           beforeInjection={(svg) => {
             svg.setAttribute('style', `width: ${LOGO_SIZE}; height: ${LOGO_SIZE}`)
           }} />
-        </Box>
-        <Box width='30vw'>
-          <Link href='/about'>
-            <Typography color='primary'>About</Typography>
-          </Link>
+      </Box>
+      <Box width='30vw'>
+        <Link href='/about'>
+          <Typography color='primary'>About</Typography>
+        </Link>
         <Typography m='auto' as='h1' fontFamily='headings'>
           Willkommen
         </Typography>
         <Typography>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </Typography>
-        </Box>
-      </Flexbox>
-    </Box>
+      </Box>
+    </Flexbox>
+  </Box>
 )
 
 export default Home

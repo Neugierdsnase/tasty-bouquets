@@ -21,18 +21,18 @@ const BouquetBox: FunctionComponent = () => <Box />
 
 const LogoWithText: FunctionComponent = () => (
   <Box color='primary'>
-      <Flexbox alignItems='center' justifyContent='center' flexDirection='column'>
-        <Link href='/'>
+    <Flexbox alignItems='center' justifyContent='center' flexDirection='column'>
+      <Link href='/'>
         <Box height={LOGO_SIZE} width={LOGO_SIZE}>  
-        <ReactSVG 
-          src='logo.svg'
-          beforeInjection={(svg) => {
-            svg.setAttribute('style', `width: ${LOGO_SIZE}; height: ${LOGO_SIZE}`)
-          }} />
+          <ReactSVG 
+            src='logo.svg'
+            beforeInjection={(svg) => {
+              svg.setAttribute('style', `width: ${LOGO_SIZE}; height: ${LOGO_SIZE}`)
+            }} />
         </Box>
-        </Link>
-      </Flexbox>
-    </Box>
+      </Link>
+    </Flexbox>
+  </Box>
 )
 
 export default About

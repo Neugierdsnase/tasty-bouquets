@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "npx eslint . --fix"
+    "lint": "npx eslint . --fix",
+    "prettify": "prettier --write"
   },
   "husky": {
     "hooks": {
@@ -14,18 +15,15 @@
     }
   },
   "lint-staged": {
-    "linters": {
-      "**/*.+(ts|tsx|js|jsx|json|css)": [
-        "prettier --write && npm run lint",
-        "eslint",
-        "git add"
-      ]
-    }
+    "**/*.+(ts|tsx|js|jsx|json|css)": [
+      "prettify",
+      "npm run lint",
+      "git add"
+    ]
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "./eslintrc.json"
     ]
   },
   "browserslist": {
@@ -52,6 +50,8 @@
   "devDependencies": {
     "@types/react": "^17.0.3",
     "@types/styled-components": "^5.1.9",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
     "eslint": "^7.24.0",
     "eslint-plugin-react": "^7.23.2",
     "husky": "^6.0.0",
