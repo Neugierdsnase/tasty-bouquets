@@ -3,7 +3,6 @@ import { theme } from './theme'
 
 export const GlobalStyle = createGlobalStyle`
   body, div, section, main {
-    background-color: ${theme.colors.darkBg}
     box-sizing: border-box;
   }
 

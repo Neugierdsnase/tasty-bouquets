@@ -36,6 +36,6 @@ export const theme = {
     headings: '\'Pacifico\', cursive;',
     paragraphs: '\'Noto Sans\', sans-serif;',
   },
-  space: [2, 4, 8, 16, 34, 68, 124, 248, 496, 992],
-  sizes: [2, 4, 8, 16, 34, 68, 124, 248, 496, 992]
+  space: [0, 2, 4, 8, 16, 34, 68, 124, 248, 496, 992],
+  sizes: [0, 2, 4, 8, 16, 34, 68, 124, 248, 496, 992]
 }

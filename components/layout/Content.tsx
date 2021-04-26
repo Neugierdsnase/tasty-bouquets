@@ -1,25 +1,10 @@
 import React, { FunctionComponent } from 'react'
 import { Box } from './Box'
-import { GridContainer, GridItem } from './Grid'
+import { Flexbox } from './Flexbox'
 
-type Side = { backgroundColor: string, Component: FunctionComponent<any>}
-
-type ContentProps = {
-  leftSide: Side
-  rightSide: Side
-}
-
-const Half: FunctionComponent<Side> = ({Component, backgroundColor}) => (
-  <GridItem sm={12} md={6}>
-    <Box bg={backgroundColor} p={4} widht={['100vw', '100vw', '50vw']} height='100vh'>
-      <Component />
-    </Box>
-  </GridItem>
-)
-
-export const Content: FunctionComponent<ContentProps> = ({ leftSide, rightSide }) => (
-  <GridContainer>
-    <Half {...leftSide} />
-    <Half {...rightSide} />
-  </GridContainer>
+export const Content: FunctionComponent = ({ children }) => (
+  <Flexbox flexDirection={['column-reverse','column-reverse', 'row',]}>
+    <Box width={['100vw', '100vw', '50vw']} height='100vh'>{children}</Box>
+    <Box width={['100vw', '100vw', '50vw']} height='100vh' />
+  </Flexbox>
 )

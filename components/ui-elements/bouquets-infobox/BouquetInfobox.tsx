@@ -1,6 +1,6 @@
-import React, { FunctionComponent } from "react";
-import { Bouquet } from "../../../types/bouquet";
-import { BouquetTransitionComponent } from "./BouquetTransitionComponent";
+import React, { FunctionComponent } from 'react'
+import { Bouquet } from '../../../types/bouquet'
+import { BouquetTransitionComponent } from './BouquetTransitionComponent'
 
 type BouquetInfoboxProps = {
   bouquet: Bouquet;
@@ -9,5 +9,5 @@ type BouquetInfoboxProps = {
 export const BouquetInfobox: FunctionComponent<BouquetInfoboxProps> = ({
   bouquet,
 }) => {
-  return <BouquetTransitionComponent bouquet={bouquet} />;
-};
+  return <BouquetTransitionComponent bouquet={bouquet} />
+}
